@@ -1,9 +1,9 @@
 import StudentProfileCard from "./StudentProfileCard";
 
 const students = [
-  { id: 1, name: "Student One", studentId: "1001", major: "Web Programming", year: 2, gpa: 3.8 },
-  { id: 2, name: "Student Two", studentId: "1002", major: "Computer Science", year: 1, gpa: 3.5 },
-  { id: 3, name: "Student Three", studentId: "1003", major: "Design", year: 3, gpa: 3.9 },
+  { id: 1, name: "Aale Aaditi", studentId: "202537195", major: "Computer Engineering", year: 2, gpa: 4.3 },
+  { id: 2, name: "Shrestha Puja", studentId: "202537250", major: "Computer Engineering", year: 1, gpa: 4.3 },
+  { id: 3, name: "Sunar Roshni", studentId: "202537197", major: "Computer Engineering", year: 3, gpa: 4.3 },
 ];
 
 function App() {
