@@ -8,9 +8,11 @@ const students = [
 
 function App() {
   return (
-    <div style={{ padding: "2rem" }}>
-      <h1>Student Directory</h1>
-      <div style={{ display: "flex", flexWrap: "wrap" }}>
+    <div className="directory">
+      <h1>
+        Student <span className="script">Directory</span>
+      </h1>
+      <div className="directory-grid">
         {students.map((student) => (
           <StudentProfileCard
             key={student.id}

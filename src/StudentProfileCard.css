@@ -1,20 +1,49 @@
 .student-card {
-  background: #fffdf8;
-  border: 2px solid #2a1b1b;
-  border-radius: 14px;
-  padding: 24px 28px;
-  max-width: 340px;
-  margin: 16px;
-  box-shadow: 6px 6px 0 #f4a6c4;
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  background: #fff;
+  padding: 28px 22px 24px;
+  text-align: left;
+  border-top: 8px solid var(--pink, #f4a6c4);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.directory-grid .student-card:nth-child(odd) {
+  transform: rotate(-2deg);
+}
+
+.directory-grid .student-card:nth-child(even) {
+  transform: rotate(2deg);
+}
+
+.directory-grid .student-card:nth-child(3n) {
+  transform: rotate(-1deg);
+}
+
+.student-card:hover {
+  transform: rotate(0deg) translateY(-8px) scale(1.03);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25);
 }
 
 .student-card h2 {
   margin: 0 0 12px;
-  font-size: 24px;
-  color: #6b0f1a;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--maroon, #6b0f1a);
+  padding-bottom: 12px;
+  border-bottom: 2px dashed var(--ink, #2a1b1b);
 }
 
 .student-card p {
-  margin: 6px 0;
-  font-size: 16px;
+  margin: 8px 0;
+  font-size: 18px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .student-card {
+    transition: none;
+  }
 }
